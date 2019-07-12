@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F07%2F02%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <title><![CDATA[html2canvas绘图空白问题]]></title>
+    <url>%2F2019%2F07%2F09%2Fhtml2canvas%2F</url>
+    <content type="text"><![CDATA[公司让修改一个08年的台湾项目，加上一个截屏保存图片功能，使用了html2canvas,发现保存之后一片空白，最后发现是由于滚动条的原因，附上代码 12345678910html2canvas(document.getElementById("box"),&#123; logging: false, //日志输出 useCORS: true, //图片允许跨域 width: '', // 默认element宽 height: '', // 默认element高 x: 0, // 裁剪画布x坐标 y: document.getElementById("box").offsetTop //裁剪画布y坐标，之前用的window.pageYOffset不行&#125;).then(function(canvas) &#123; // xxxxxx&#125;) 更多配置请查阅文档html2canvas]]></content>
+      <tags>
+        <tag>插件</tag>
+        <tag>JavaScript</tag>
+      </tags>
   </entry>
 </search>
