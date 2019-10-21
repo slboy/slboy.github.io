@@ -111,14 +111,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="个人信息">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="问题  vue页面与iframe页面之间的通信问题，监听iframe嵌套页面的按钮单机事件  解決  1.使用ref获取iframe内部对象的全部属性  2.vue页面通过addEventListener 监听信号，iframe通过postMessage进行信号传递；  3.注意EventListener事件的销毁  代码12345678910111213141516171819202122232">
+<meta name="keywords" content="vue,iframe">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue页面监听iframe事件">
+<meta property="og:url" content="http://yoursite.com/2019/10/18/vue页面监听iframe事件/index.html">
 <meta property="og:site_name" content="浪子鹏">
+<meta property="og:description" content="问题  vue页面与iframe页面之间的通信问题，监听iframe嵌套页面的按钮单机事件  解決  1.使用ref获取iframe内部对象的全部属性  2.vue页面通过addEventListener 监听信号，iframe通过postMessage进行信号传递；  3.注意EventListener事件的销毁  代码12345678910111213141516171819202122232">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-12T08:43:46.325Z">
+<meta property="og:updated_time" content="2019-10-18T08:46:51.772Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="个人信息">
+<meta name="twitter:title" content="vue页面监听iframe事件">
+<meta name="twitter:description" content="问题  vue页面与iframe页面之间的通信问题，监听iframe嵌套页面的按钮单机事件  解決  1.使用ref获取iframe内部对象的全部属性  2.vue页面通过addEventListener 监听信号，iframe通过postMessage进行信号传递；  3.注意EventListener事件的销毁  代码12345678910111213141516171819202122232">
 
 
 
@@ -128,7 +132,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/about/">
+  <link rel="canonical" href="http://yoursite.com/2019/10/18/vue页面监听iframe事件/">
 
 
 
@@ -138,7 +142,7 @@
   };
 </script>
 
-  <title>个人信息 | 浪子鹏</title>
+  <title>vue页面监听iframe事件 | 浪子鹏</title>
   
 
 
@@ -247,7 +251,7 @@
         
         
           
-          <li class="menu-item menu-item-关于 menu-item-active">
+          <li class="menu-item menu-item-关于">
 
     
     
@@ -340,31 +344,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -419,45 +398,269 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/18/vue页面监听iframe事件/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="lzPeng">
+      <meta itemprop="description" content="你的名字我的姓氏">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="浪子鹏">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">个人信息
+        
+        
+          <h2 class="post-title" itemprop="name headline">vue页面监听iframe事件
 
-</h2>
+              
+            
+          </h2>
+        
 
-<div class="post-meta">
-  
-  
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-10-18 15:56:46" itemprop="dateCreated datePublished" datetime="2019-10-18T15:56:46+08:00">2019-10-18</time>
+            </span>
+          
+
+          
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>  vue页面与iframe页面之间的通信问题，监听iframe嵌套页面的按钮单机事件</p>
+<hr>
+<h2 id="解決"><a href="#解決" class="headerlink" title="解決"></a>解決</h2><p>  1.使用ref获取iframe内部对象的全部属性<br>  2.vue页面通过addEventListener 监听信号，iframe通过<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/postMessage" target="_blank" rel="noopener">postMessage</a>进行信号传递；<br>  3.注意EventListener事件的销毁</p>
+<hr>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class=&quot;container&quot;&gt;</span><br><span class="line">    &lt;iframe ref=&quot;iframe&quot; src=&quot;xxxx&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;800&quot;&gt;&lt;/iframe&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  data () &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      iframeWin: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  mounted () &#123;</span><br><span class="line">    this.iframeWin = this.$refs.iframe.contentWindow</span><br><span class="line">    this.$nextTick(() =&gt; &#123;</span><br><span class="line">      window.addEventListener(&apos;message&apos;, this.handleMessage)</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;,</span><br><span class="line">  destroyed () &#123;</span><br><span class="line">      // 注意移除监听！注意移除监听！注意移除监听！</span><br><span class="line">      window.removeEventListener(&apos;message&apos;, this.handleMessage)</span><br><span class="line">  &#125;    </span><br><span class="line">  methods: &#123;</span><br><span class="line">    handleMessage (event) &#123;</span><br><span class="line">      // 根据上面制定的结构来解析 iframe 内部发回来的数据</span><br><span class="line">      const data = event.data</span><br><span class="line">      switch (data.cmd) &#123;</span><br><span class="line">        case &apos;case1&apos;:</span><br><span class="line">          // 业务逻辑</span><br><span class="line">          break</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;div class=&quot;div&quot;&gt;</span><br><span class="line">      &lt;h1&gt;这是一个嵌套页面&lt;/h1&gt;</span><br><span class="line">      &lt;button id=&quot;btn&quot;&gt;按钮&lt;/button&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var domain = &apos;*&apos;; // 消息源</span><br><span class="line">    document.getElementById(&apos;btn&apos;).addEventListener(&apos;click&apos;, function () &#123;</span><br><span class="line">      window.parent.postMessage(&#123;</span><br><span class="line">        cmd: &apos;case1&apos; // </span><br><span class="line">      &#125;, domain)</span><br><span class="line">    &#125;)</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>参考： <a href="https://segmentfault.com/a/1190000016258735" target="_blank" rel="noopener">vue与iframe通信</a></p>
+
+      
+    </div>
+
+    
+      
 
 
+    
 
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div id="reward-container">
+  <div>老板求包养～～～</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/weixin.jpg" alt="lzPeng 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/zhifubao.jpg" alt="lzPeng 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+  </div>
 </div>
 
-</header>
+      </div>
+    
 
+    
+
+    <footer class="post-footer">
       
-      
-      
-      <div class="post-body">
-        
         
           
         
-      </div>
+        <div class="post-tags">
+          
+            <a href="/tags/vue/" rel="tag"><i class="fa fa-tag"></i> vue</a>
+          
+            <a href="/tags/iframe/" rel="tag"><i class="fa fa-tag"></i> iframe</a>
+          
+        </div>
+      
+
       
       
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div class="social_share">
+            
+            
+            
+              <div>
+                
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+              </div>
+            
+          </div>
+        
+        </div>
       
-    </div>
-    
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/12/vue的keep-alive问题/" rel="next" title="vue的keep-alive问题">
+                <i class="fa fa-chevron-left"></i> vue的keep-alive问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-
-    
-    
-    
   </div>
 
 
@@ -486,8 +689,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -602,6 +814,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解決"><span class="nav-number">2.</span> <span class="nav-text">解決</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

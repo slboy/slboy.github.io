@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-15T07:26:51.073Z</updated>
+  <updated>2019-10-18T08:46:51.772Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue页面监听iframe事件</title>
+    <link href="http://yoursite.com/2019/10/18/vue%E9%A1%B5%E9%9D%A2%E7%9B%91%E5%90%ACiframe%E4%BA%8B%E4%BB%B6/"/>
+    <id>http://yoursite.com/2019/10/18/vue页面监听iframe事件/</id>
+    <published>2019-10-18T07:56:46.000Z</published>
+    <updated>2019-10-18T08:46:51.772Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+      <category term="iframe" scheme="http://yoursite.com/tags/iframe/"/>
+    
+  </entry>
   
   <entry>
     <title>vue的keep-alive问题</title>
