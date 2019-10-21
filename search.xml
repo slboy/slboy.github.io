@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[命令行错误1]]></title>
+    <url>%2F2019%2F10%2F21%2F%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%94%99%E8%AF%AF1%2F</url>
+    <content type="text"><![CDATA[问题好长时间没有更博客了，最近更了一下报了下面的错误，导致hexo d无法部署到git上 1Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo. 解决通过百度，找到原因，由于之前更新了xCode，而没有打开同意用户协议。打开xCode输入用户密码，同意即可]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[vue页面监听iframe事件]]></title>
     <url>%2F2019%2F10%2F18%2Fvue%E9%A1%B5%E9%9D%A2%E7%9B%91%E5%90%ACiframe%E4%BA%8B%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[问题 vue页面与iframe页面之间的通信问题，监听iframe嵌套页面的按钮单机事件 解決 1.使用ref获取iframe内部对象的全部属性 2.vue页面通过addEventListener 监听信号，iframe通过postMessage进行信号传递； 3.注意EventListener事件的销毁 代码1234567891011121314151617181920212223242526272829303132333435&lt;template&gt; &lt;div class=&quot;container&quot;&gt; &lt;iframe ref=&quot;iframe&quot; src=&quot;xxxx&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;800&quot;&gt;&lt;/iframe&gt; &lt;/div&gt;&lt;/template&gt;export default &#123; data () &#123; return &#123; iframeWin: &#123;&#125; &#125; &#125;, mounted () &#123; this.iframeWin = this.$refs.iframe.contentWindow this.$nextTick(() =&gt; &#123; window.addEventListener(&apos;message&apos;, this.handleMessage) &#125;) &#125;, destroyed () &#123; // 注意移除监听！注意移除监听！注意移除监听！ window.removeEventListener(&apos;message&apos;, this.handleMessage) &#125; methods: &#123; handleMessage (event) &#123; // 根据上面制定的结构来解析 iframe 内部发回来的数据 const data = event.data switch (data.cmd) &#123; case &apos;case1&apos;: // 业务逻辑 break &#125; &#125; &#125;&#125;&lt;/script&gt; 1234567891011121314&lt;body&gt; &lt;div class=&quot;div&quot;&gt; &lt;h1&gt;这是一个嵌套页面&lt;/h1&gt; &lt;button id=&quot;btn&quot;&gt;按钮&lt;/button&gt; &lt;/div&gt; &lt;script&gt; var domain = &apos;*&apos;; // 消息源 document.getElementById(&apos;btn&apos;).addEventListener(&apos;click&apos;, function () &#123; window.parent.postMessage(&#123; cmd: &apos;case1&apos; // &#125;, domain) &#125;) &lt;/script&gt;&lt;/body&gt; 参考： vue与iframe通信]]></content>
