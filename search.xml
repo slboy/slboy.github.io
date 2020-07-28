@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[flutter错误归纳]]></title>
+    <url>%2F2020%2F07%2F28%2Fflutter%E9%94%99%E8%AF%AF%E5%BD%92%E7%BA%B3%2F</url>
+    <content type="text"><![CDATA[安卓启动问题1如图所示解决：复制http://services.gradle.org/distributions/gradle-5.6.2-all.zip到浏览器中下载（如果下载网络错误请使用迅雷下载）把下载之后的安装包，放在用户根目录的.gradle/wrapper/dists/gradle-5.6.2-all下面，你的是什么版本就放在什么版本文件夹下面，先清空此文件夹其他缓存依赖，然后放入zip包 安卓启动问题2如图所示解决：找到用户根目录的.gradle/gradle.properties文件，注释掉里面的内容，或者删除 安卓启动问题3如图所示解决：]]></content>
+      <tags>
+        <tag>flutter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[你不知道的JavaScript（上）读书笔记]]></title>
+    <url>%2F2019%2F10%2F21%2F%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%EF%BC%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[作用域 作用域是一套规则，用于确定在何处以及如何查找变量(标识符)。 程序中的一段源代码在执行之前会经历三个步骤，统称为“编 译”。分为“分词/词法分析”，“解析/语法分析”，“代码生成”。 编译器生成代码后，引擎执行时会通过“LHS”（赋值操作的目标是谁），“RHS”（谁是赋值操作的源头）两种方法查找。 如果查找的目的是对变量进行赋值，那么就会使用 LHS 查询;如果目的是获取变量的值，就会使用 RHS 查询。不成功的 RHS 引用会导致抛出 ReferenceError 异常。不成功的 LHS 引用会导致自动隐式 地创建一个全局变量(非严格模式下)，该变量使用 LHS 引用的目标作为标识符，或者抛出 ReferenceError 异常(严格模式下)。 词法作用域 词法作用域意味着作用域是由书写代码时函数声明的位置来决定的。 JavaScript 中有两个机制可以“欺骗”词法作用域:eval(..) 和 with。（不要使用） 函数作用域和块作用域 函数作用域是指属于这个函数的全部变量都可以在整个函数的范围内使用及复 用(事实上在嵌套的作用域中也可以使用)。 块作用域指的是变量和函数不仅可以属于所处的作用域，也可以属于某个代码块(通常指 { .. } 内部)。 提升 所有的声明(变量和函数)都会被“移动”到各自作用域的 最顶端，这个过程被称为提升。 声明本身会被提升，而包括函数表达式的赋值在内的赋值操作并不会提升。 作用域闭包123456789function foo() &#123; var a = 2; function bar() &#123; console.log( a ); &#125; return bar;&#125;var baz = foo();baz(); // 2 —— 这就是闭包的效果。]]></content>
+      <tags>
+        <tag>book</tag>
+        <tag>notes</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[命令行错误1]]></title>
     <url>%2F2019%2F10%2F21%2F%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%94%99%E8%AF%AF1%2F</url>
     <content type="text"><![CDATA[问题好长时间没有更博客了，最近更了一下报了下面的错误，导致hexo d无法部署到git上 1Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo. 解决通过百度，找到原因，由于之前更新了xCode，而没有打开同意用户协议。打开xCode输入用户密码，同意即可]]></content>
+      <tags>
+        <tag>cmd</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[vue页面监听iframe事件]]></title>
