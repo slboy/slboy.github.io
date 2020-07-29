@@ -5,9 +5,9 @@
   <subtitle>前端，电影，游戏</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://langzipeng.cn/"/>
   <updated>2020-07-29T03:29:38.413Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://langzipeng.cn/</id>
   
   <author>
     <name>lzPeng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>flutter错误归纳</title>
-    <link href="http://yoursite.com/2020/07/28/flutter%E9%94%99%E8%AF%AF%E5%BD%92%E7%BA%B3/"/>
-    <id>http://yoursite.com/2020/07/28/flutter错误归纳/</id>
+    <link href="http://langzipeng.cn/2020/07/28/flutter%E9%94%99%E8%AF%AF%E5%BD%92%E7%BA%B3/"/>
+    <id>http://langzipeng.cn/2020/07/28/flutter错误归纳/</id>
     <published>2020-07-28T09:57:22.000Z</published>
     <updated>2020-07-29T03:29:38.413Z</updated>
     
@@ -36,14 +36,14 @@
     </summary>
     
     
-      <category term="flutter" scheme="http://yoursite.com/tags/flutter/"/>
+      <category term="flutter" scheme="http://langzipeng.cn/tags/flutter/"/>
     
   </entry>
   
   <entry>
     <title>你不知道的JavaScript（上）读书笔记</title>
-    <link href="http://yoursite.com/2019/10/21/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%EF%BC%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2019/10/21/你不知道的JavaScript（上）读书笔记/</id>
+    <link href="http://langzipeng.cn/2019/10/21/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84JavaScript%EF%BC%88%E4%B8%8A%EF%BC%89%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://langzipeng.cn/2019/10/21/你不知道的JavaScript（上）读书笔记/</id>
     <published>2019-10-21T09:06:50.000Z</published>
     <updated>2020-07-28T10:03:49.394Z</updated>
     
@@ -60,16 +60,16 @@
     </summary>
     
     
-      <category term="book" scheme="http://yoursite.com/tags/book/"/>
+      <category term="book" scheme="http://langzipeng.cn/tags/book/"/>
     
-      <category term="notes" scheme="http://yoursite.com/tags/notes/"/>
+      <category term="notes" scheme="http://langzipeng.cn/tags/notes/"/>
     
   </entry>
   
   <entry>
     <title>命令行错误1</title>
-    <link href="http://yoursite.com/2019/10/21/%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%94%99%E8%AF%AF1/"/>
-    <id>http://yoursite.com/2019/10/21/命令行错误1/</id>
+    <link href="http://langzipeng.cn/2019/10/21/%E5%91%BD%E4%BB%A4%E8%A1%8C%E9%94%99%E8%AF%AF1/"/>
+    <id>http://langzipeng.cn/2019/10/21/命令行错误1/</id>
     <published>2019-10-21T08:43:48.000Z</published>
     <updated>2019-10-21T09:05:13.347Z</updated>
     
@@ -86,14 +86,14 @@
     </summary>
     
     
-      <category term="cmd" scheme="http://yoursite.com/tags/cmd/"/>
+      <category term="cmd" scheme="http://langzipeng.cn/tags/cmd/"/>
     
   </entry>
   
   <entry>
     <title>vue页面监听iframe事件</title>
-    <link href="http://yoursite.com/2019/10/18/vue%E9%A1%B5%E9%9D%A2%E7%9B%91%E5%90%ACiframe%E4%BA%8B%E4%BB%B6/"/>
-    <id>http://yoursite.com/2019/10/18/vue页面监听iframe事件/</id>
+    <link href="http://langzipeng.cn/2019/10/18/vue%E9%A1%B5%E9%9D%A2%E7%9B%91%E5%90%ACiframe%E4%BA%8B%E4%BB%B6/"/>
+    <id>http://langzipeng.cn/2019/10/18/vue页面监听iframe事件/</id>
     <published>2019-10-18T07:56:46.000Z</published>
     <updated>2019-10-18T08:46:51.772Z</updated>
     
@@ -110,16 +110,16 @@
     </summary>
     
     
-      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+      <category term="vue" scheme="http://langzipeng.cn/tags/vue/"/>
     
-      <category term="iframe" scheme="http://yoursite.com/tags/iframe/"/>
+      <category term="iframe" scheme="http://langzipeng.cn/tags/iframe/"/>
     
   </entry>
   
   <entry>
     <title>vue的keep-alive问题</title>
-    <link href="http://yoursite.com/2019/07/12/vue%E7%9A%84keep-alive%E9%97%AE%E9%A2%98/"/>
-    <id>http://yoursite.com/2019/07/12/vue的keep-alive问题/</id>
+    <link href="http://langzipeng.cn/2019/07/12/vue%E7%9A%84keep-alive%E9%97%AE%E9%A2%98/"/>
+    <id>http://langzipeng.cn/2019/07/12/vue的keep-alive问题/</id>
     <published>2019-07-12T08:00:46.000Z</published>
     <updated>2019-07-15T07:26:51.073Z</updated>
     
@@ -136,14 +136,14 @@
     </summary>
     
     
-      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+      <category term="vue" scheme="http://langzipeng.cn/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>html2canvas绘图空白问题</title>
-    <link href="http://yoursite.com/2019/07/09/html2canvas/"/>
-    <id>http://yoursite.com/2019/07/09/html2canvas/</id>
+    <link href="http://langzipeng.cn/2019/07/09/html2canvas/"/>
+    <id>http://langzipeng.cn/2019/07/09/html2canvas/</id>
     <published>2019-07-09T09:40:16.000Z</published>
     <updated>2019-07-11T08:20:38.124Z</updated>
     
@@ -160,9 +160,9 @@
     </summary>
     
     
-      <category term="插件" scheme="http://yoursite.com/tags/%E6%8F%92%E4%BB%B6/"/>
+      <category term="插件" scheme="http://langzipeng.cn/tags/%E6%8F%92%E4%BB%B6/"/>
     
-      <category term="JavaScript" scheme="http://yoursite.com/tags/JavaScript/"/>
+      <category term="JavaScript" scheme="http://langzipeng.cn/tags/JavaScript/"/>
     
   </entry>
   
